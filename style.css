@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "inter",  sans-serif;
+    font-size: 14px;
+    background-color:  hsl(0, 0%, 8%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.container{
+   padding-inline: 15rem; 
+   margin: 9rem auto 0;
+}
+
+.profile{
+    background-color: hsl(0, 0%, 12%);
+    width: 32rem;
+    padding: 1.8rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+
+
+.profile .circle{
+    width: 9rem;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+.circle img{
+    max-width: 100%;
+    display: inherit;
+    border-radius: 50%;
+    padding-bottom: 20px ;
+}
+
+h1 {
+    color: white;
+    padding: 5px;
+}
+h3{
+    color:hsl(75, 94%, 57%);
+}
+
+p{
+    margin-top: 25px;
+    color: white;
+}
+
+.profile .social-media{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+}
+.profile .social-media{
+    width: 100%;
+}
+
+.profile .social-media li a{
+    background-color:hsl(0, 0%, 20%);
+    color: white;
+    padding: 1.6rem 0;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    font-weight: var(--fw-semi-bold);
+    transition: all ,0.3s ease-in-out;
+
+}
+
+.profile .social-media li:hover a {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+@media (min-width:1200px) {
+    .container{
+        margin-top: 0%;
+    }
+
+    .profile {
+        width: 38rem;
+        padding: 3rem 4rem;
+    }
+}
